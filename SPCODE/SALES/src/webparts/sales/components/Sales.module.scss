@@ -1,0 +1,648 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+ 
+
+.form {
+
+ 
+
+ 
+
+ 
+
+  max-width: 700px;
+
+ 
+
+ 
+
+ 
+
+  margin: 0 auto;
+
+ 
+
+ 
+
+ 
+
+  box-shadow: 0 2px 4px #493a632d;
+
+ 
+
+ 
+
+ 
+
+  padding: 40px;
+
+ 
+
+ 
+
+ 
+
+  background-color: hsl(295, 40%, 17%); /* Darker background color */
+
+ 
+
+ 
+
+ 
+
+  border-radius: 10px;
+
+ 
+
+ 
+
+ 
+
+  color: #e1f4ff; /* Light text color */
+
+ 
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+.form h2 {
+
+ 
+
+ 
+
+ 
+
+  font-size: 28px;
+
+ 
+
+ 
+
+ 
+
+  margin-bottom: 30px;
+
+ 
+
+ 
+
+ 
+
+  text-align: center;
+
+ 
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+.form label {
+
+ 
+
+ 
+
+ 
+
+  display: block;
+
+ 
+
+ 
+
+ 
+
+  margin-bottom: 10px;
+
+ 
+
+ 
+
+ 
+
+  font-weight: bold;
+
+ 
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+.form select,
+
+ 
+
+ 
+
+ 
+
+.form input[type="text"],
+
+ 
+
+ 
+
+ 
+
+.form input[type="number"] {
+
+ 
+
+ 
+
+ 
+
+  width: 100%;
+
+ 
+
+ 
+
+ 
+
+  padding: 12px;
+
+ 
+
+ 
+
+ 
+
+  border-radius: 6px;
+
+ 
+
+ 
+
+ 
+
+  border: 1px solid #666; /* Darker border color */
+
+ 
+
+ 
+
+ 
+
+  font-size: 16px;
+
+ 
+
+ 
+
+ 
+
+  margin-bottom: 20px;
+
+ 
+
+ 
+
+ 
+
+  color: #ccc; /* Light text color for inputs */
+
+ 
+
+ 
+
+ 
+
+  background-color: hwb(240 33% 67%); /* Darker input background */
+
+ 
+
+ 
+
+ 
+
+}
+
+ 
+
+.form input[type="number"]::-webkit-inner-spin-button,
+
+ 
+
+ 
+
+ 
+
+.form input[type="number"]::-webkit-outer-spin-button {
+
+ 
+
+ 
+
+ 
+
+  -webkit-appearance: none;
+
+ 
+
+ 
+
+ 
+
+  margin: 0;
+
+ 
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+.form button {
+
+ 
+
+ 
+
+ 
+
+  text-decoration: none;
+
+ 
+
+ 
+
+ 
+
+  display: inline-block;
+
+ 
+
+ 
+
+ 
+
+  padding: 14px 26px;
+
+ 
+
+ 
+
+ 
+
+  font-size: 18px;
+
+ 
+
+ 
+
+ 
+
+  font-weight: bold;
+
+ 
+
+ 
+
+ 
+
+  border-radius: 6px;
+
+ 
+
+ 
+
+ 
+
+  background-color: hsl(283, 64%, 41%); /* Darker button background */
+
+ 
+
+ 
+
+ 
+
+  color: #fff; /* Light text color for buttons */
+
+ 
+
+ 
+
+ 
+
+  border: none;
+
+ 
+
+ 
+
+ 
+
+  cursor: pointer;
+
+ 
+
+ 
+
+ 
+
+  transition: background-color 0.3s ease-in-out;
+
+ 
+
+ 
+
+ 
+
+  margin-right: 10px;
+
+ 
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+.form button:hover {
+
+ 
+
+ 
+
+ 
+
+  background-color: hwb(277 9% 65%); /* Darker button background on hover */
+
+ 
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+ 
+
+table {
+
+ 
+
+ 
+
+ 
+
+  width: 100%;
+
+ 
+
+ 
+
+ 
+
+  border-collapse: collapse;
+
+ 
+
+ 
+
+ 
+
+  margin-top: 30px;
+
+ 
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+table th,
+
+ 
+
+ 
+
+ 
+
+table td {
+
+ 
+
+ 
+
+ 
+
+  padding: 16px;
+
+ 
+
+ 
+
+ 
+
+  border: 1px solid #444; /* Darker border color for table */
+
+ 
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+table th {
+
+ 
+
+ 
+
+ 
+
+  background-color: hsl(283, 64%, 41%); /* Darker table header background */
+
+ 
+
+ 
+
+ 
+
+  color: #fff; /* Light text color for table header */
+
+ 
+
+ 
+
+ 
+
+  text-align: left;
+
+ 
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+table tbody tr:nth-child(even) {
+
+ 
+
+ 
+
+ 
+
+  background-color: hsl(288, 30%, 16%); /* Darker even row background */
+
+ 
+
+ 
+
+ 
+
+  color: #ccc; /* Light text color for even rows */
+
+ 
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+table tbody tr:nth-child(odd) {
+
+ 
+
+ 
+
+ 
+
+  background-color: hsl(274, 23%, 19%); /* Darker odd row background */
+
+ 
+
+ 
+
+ 
+
+  color: #ccc; /* Light text color for odd rows */
+
+ 
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+ 
+
+/* Additional styles for the button class */
+
+ 
+
+ 
+
+ 
+
+.style.button {
+
+ 
+
+ 
+
+ 
+
+  background-color: #4f2f57; /* Darker button background for dark mode */
+
+ 
+
+ 
+
+ 
+
+  color: #ccc; /* Light text color for buttons in dark mode */
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+.style.button:hover {
+
+ 
+
+  background-color: #341c3b; /* Darker button background on hover in dark mode */
+
+ 
+
+ 
+
+ 
+
+}
+
